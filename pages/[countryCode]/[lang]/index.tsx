@@ -18,6 +18,7 @@ type Props = {
 };
 
 const HomePage: NextPage<Props> = ({ lang, countries, country, taxonomies, buildLanguages }) => {
+  console.log("HomePage lang", lang, country);
   const languageCode = parseLanguageCode(lang, "toLowerCase", true);
   const countryCode = country?.code.toLowerCase() as string;
   const clMarketId = country?.marketId as string;

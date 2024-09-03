@@ -10,6 +10,7 @@ type Props = {
 };
 
 const IndexPage: NextPage<Props> = ({ countries }) => {
+  console.log("IndexPage");
   return (
     <>
       <SEOHead />
